@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Rooms</h1>
+
+<div id="rooms">
+  <% @rooms.each do |room| %>
+    <%= link_to room.name.capitalize, room %> </br>
+  <% end %>
+</div>
+
+<%= link_to "New room", new_room_path %>
